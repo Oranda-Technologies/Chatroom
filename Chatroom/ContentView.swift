@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    var messageArray = ["yo wassup!", "I'm back in the city, hit me up", "got to go chill with the squalle for now doe!"]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            VStack {
+                TitleRow()
+                ScrollView {
+                    ForEach(messageArray, id: \.self) {
+                        text in MessageBubble(message: Message(id: "12345", text: text, received: true, timestamp: Date()))
+                    }
+                } .padding(.top, 10)
+                    .background(.white)
+                    .cornerRadius(30, corners: [.topLeft, .topRight])
+            }
+            .background(Color("Blue"))
+            MessageField()
+        }
     }
 }
 

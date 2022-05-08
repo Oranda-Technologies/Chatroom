@@ -14,6 +14,11 @@
 		1AC0DA5F2826F2930007B812 /* ChatroomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC0DA5E2826F2930007B812 /* ChatroomTests.swift */; };
 		1AC0DA692826F2930007B812 /* ChatroomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC0DA682826F2930007B812 /* ChatroomUITests.swift */; };
 		1AC0DA6B2826F2930007B812 /* ChatroomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC0DA6A2826F2930007B812 /* ChatroomUITestsLaunchTests.swift */; };
+		1AFB591128273C420099A5B2 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB591028273C420099A5B2 /* TitleRow.swift */; };
+		1AFB5914282752C20099A5B2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB5913282752C20099A5B2 /* Message.swift */; };
+		1AFB5916282753470099A5B2 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB5915282753470099A5B2 /* MessageBubble.swift */; };
+		1AFB591828275E8D0099A5B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB591728275E8D0099A5B2 /* Extensions.swift */; };
+		1AFB591A282763CA0099A5B2 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB5919282763CA0099A5B2 /* MessageField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		1AC0DA642826F2930007B812 /* ChatroomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatroomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC0DA682826F2930007B812 /* ChatroomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomUITests.swift; sourceTree = "<group>"; };
 		1AC0DA6A2826F2930007B812 /* ChatroomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1AFB591028273C420099A5B2 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
+		1AFB5913282752C20099A5B2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1AFB5915282753470099A5B2 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		1AFB591728275E8D0099A5B2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1AFB5919282763CA0099A5B2 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +104,13 @@
 		1AC0DA4C2826F2910007B812 /* Chatroom */ = {
 			isa = PBXGroup;
 			children = (
+				1AFB5912282752AC0099A5B2 /* Modals */,
 				1AC0DA4D2826F2910007B812 /* ChatroomApp.swift */,
 				1AC0DA4F2826F2910007B812 /* ContentView.swift */,
+				1AFB590F28273C100099A5B2 /* Components */,
 				1AC0DA512826F2930007B812 /* Assets.xcassets */,
 				1AC0DA532826F2930007B812 /* Preview Content */,
+				1AFB591728275E8D0099A5B2 /* Extensions.swift */,
 			);
 			path = Chatroom;
 			sourceTree = "<group>";
@@ -125,6 +138,24 @@
 				1AC0DA6A2826F2930007B812 /* ChatroomUITestsLaunchTests.swift */,
 			);
 			path = ChatroomUITests;
+			sourceTree = "<group>";
+		};
+		1AFB590F28273C100099A5B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB591028273C420099A5B2 /* TitleRow.swift */,
+				1AFB5915282753470099A5B2 /* MessageBubble.swift */,
+				1AFB5919282763CA0099A5B2 /* MessageField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1AFB5912282752AC0099A5B2 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB5913282752C20099A5B2 /* Message.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC0DA502826F2910007B812 /* ContentView.swift in Sources */,
+				1AFB591828275E8D0099A5B2 /* Extensions.swift in Sources */,
+				1AFB5914282752C20099A5B2 /* Message.swift in Sources */,
+				1AFB591A282763CA0099A5B2 /* MessageField.swift in Sources */,
+				1AFB5916282753470099A5B2 /* MessageBubble.swift in Sources */,
 				1AC0DA4E2826F2910007B812 /* ChatroomApp.swift in Sources */,
+				1AFB591128273C420099A5B2 /* TitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
